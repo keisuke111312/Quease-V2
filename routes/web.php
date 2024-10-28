@@ -11,16 +11,7 @@ use App\Http\Controllers\ProfessorReviewController;
 use App\Http\Controllers\Student\StudentTaskController;
 use Illuminate\Support\Facades\Route;
 
-/*
-|--------------------------------------------------------------------------
-| Web Routes
-|--------------------------------------------------------------------------
-|
-| Here is where you can register web routes for your application. These
-| routes are loaded by the RouteServiceProvider within a group which
-| contains the "web" middleware group. Now create something great!
-|
-*/
+
 
 Route::get('/', function () {
     return view('splash.s-welcome');
@@ -90,3 +81,6 @@ Route::middleware(['auth','can:admin'])->prefix('admin')->group(function () {
 
 Route::get('/admin/login', [AdminAuthController::class, 'showLoginForm'])->name('admin.login');
 Route::post('/admin/login', [AdminAuthController::class, 'login']);
+
+
+// I add something here
