@@ -1,0 +1,82 @@
+.custom-card {
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.custom-card-header {
+    font-family: Helvetica, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: #fff;
+    font-weight: bold;
+    font-size: 14px;
+    text-align: center;
+    padding: 10px;
+    background-color: #ed8936;
+}
+
+
+.custom-card-body {
+    padding: 10px;
+    height: 150px;
+   
+}
+
+/* Form */
+.custom-form .form-group {
+    margin-bottom: 15px;
+}
+
+.custom-form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    margin-left: 5%;
+
+}
+
+.custom-select,
+.custom-input {
+    width: 90%;
+    padding: 8px;
+    margin-left: 5%;
+
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.custom-button {
+    background-color: #ed8936;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-left: 5%;
+    margin-bottom: 5%;
+
+}
+
+.custom-button:hover {
+    background-color: #c9610c;
+}
+
+
+.counter-card {
+    height: 27vh;
+    border-radius: 10px;
+    transition: box-shadow 0.3s ease;
+    background-color: #ffffff;
+    border: 0.7px solid #dbdbdb;
+    margin: 5px;
+    text-align: center;  
+}
+
+.counter-card:hover {
+    box-shadow: 0px 0px 15px 5px rgba(0, 0, 0, 0.1);
+}
+
+
+

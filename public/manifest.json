@@ -1,0 +1,17 @@
+{
+    "name": "Quease",
+    "short_name": "Quease",
+    "start_url": "/index.php",
+    "background_color": "#ed8936",
+    "description": "Queueing System",
+    "display": "fullscreen",
+    "theme_color": "#ed8936",
+    "icons": [
+        {
+            "src": "/img/bglogo.png",
+            "sizes": "512x512",
+            "type": "image/png",
+            "purpose": "any maskable"
+        }
+    ]
+}

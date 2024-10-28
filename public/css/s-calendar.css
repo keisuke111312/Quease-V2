@@ -1,0 +1,166 @@
+.main_container {
+    display: flex;
+    justify-content: center;
+    box-sizing: border-box; /* To include padding in width calculations */
+
+
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    width: 100%;
+    max-width: 1200px; 
+    margin: 0 auto; 
+}
+.setAppointment {
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap; 
+
+}
+
+.box {
+
+    margin-top:  60px;
+    min-width: 280px;
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    padding: 15px;
+    overflow-x: auto;
+    white-space: nowrap;
+    flex: 1 1 100%; /* Allows boxes to expand and take full width on small screens */
+
+}
+
+.left-box, .right-box {
+    height: 100%;
+    width: 80%;
+    background-color: #fff;
+    overflow-x: auto;
+    white-space: nowrap;
+}
+
+#professorFilter {
+    margin: 10px;
+    width: 20%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    color: #333;
+    font-size: 16px;
+    appearance: none;
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    background-size: 12px;
+    cursor: pointer;
+    transition: border-color 0.3s;
+}
+
+#professorFilter:hover {
+    border-color: #888;
+}
+
+.fc-time.fc-start {
+    display: none !important;
+}
+
+.fc-event {
+    background-color: #ed8936;
+    border: 1px solid #15191f;
+    color: #ffffff;
+    font-size: 1rem; /* Ensures text size is readable */
+    padding: 5px;
+    border-radius: 5px;
+}
+
+/* FullCalendar Toolbar */
+.fc-toolbar {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    background-color: #ed8936;
+    padding: 30px;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    border-bottom: 1px solid #ddd;
+}
+
+.fc-center h2 {
+    color: #ffffff;
+    font-size: 1.2rem;
+}
+
+.panel-body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1;
+    overflow-y: scroll;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+#calendar {
+    height: 60vh;
+    width: 70vw;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .setAppointment {
+        flex-direction: column; /* Stacks boxes vertically */
+    }
+    .box, #calendar {
+        width: 90vw; /* Adapts width for mobile screens */
+    }
+}
+
+@media (max-width: 600px) {
+    #professorFilter {
+        width: 90%;
+        display: flex;
+        align-self: center;
+    }
+    #calendar{
+        font-size: 8px; 
+        width: 100%;
+        overflow-y: auto;
+        
+    }
+    .fc-event {
+        font-size: 5px; 
+        height: 10px;
+        width: 20px;
+        padding: 2px;
+    }
+    .fc-toolbar {
+        padding: 15px;
+    }
+    #calendar {
+        width: 100%; /* Full width on small screens */
+    }
+    .fc-center h2 {
+        font-size: 1rem; /* Smaller header font for mobile */
+    }
+    .fc-toolbar .fc-center {
+        display: none;
+    }
+    .box{
+        width: 90%;
+    }
+    .box {
+        margin: 0;
+        border-radius: 10px;
+        padding: 0;
+        overflow-x: auto;
+        white-space: nowrap;
+        flex: 1 1 100%; /* Allows boxes to expand and take full width on small screens */
+    }
+    
+}

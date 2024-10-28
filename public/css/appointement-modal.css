@@ -1,0 +1,113 @@
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+    /* Modal container */
+    .modal {
+        display: none; /* Hidden by default */
+        position: fixed; /* Stay in place */
+        z-index: 1000; /* Sit on top */
+        left: 0;
+        top: 0;
+        width: 100%; /* Full width */
+        height: 100%; /* Full height */
+        overflow: auto; /* Enable scroll if needed */
+        background-color: rgba(0, 0, 0, 0.5); /* Black w/ opacity */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /* Modal content */
+    .modal-content {
+        background-color: #f9f9f9;
+        padding: 20px;
+        border-radius: 10px;
+        width: 500px;
+        max-width: 90%;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        position: relative;
+        animation: fadeIn 0.5s ease; /* Animation for the modal */
+    }
+
+    /* Close button */
+    .close {
+        color: #aaa;
+        position: absolute;
+        top: 15px;
+        right: 15px;
+        font-size: 24px;
+        font-weight: bold;
+        cursor: pointer;
+    }
+
+    .close:hover,
+    .close:focus {
+        color: #000;
+        text-decoration: none;
+        cursor: pointer;
+    }
+
+    /* Headings */
+    .modal-content h2 {
+        font-size: 24px;
+        margin-bottom: 20px;
+        color: #333;
+        text-align: center;
+    }
+
+    /* Form fields styling */
+    .modal-content .form-control,
+    .modal-content .form-select {
+        width: 100%;
+        padding: 10px;
+        margin: 10px 0;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+        font-size: 14px;
+    }
+
+    /* Dropdown and input container */
+    .modal-content .select-box1,
+    .modal-content .input-box {
+        margin-bottom: 20px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* Labels */
+    .modal-content label {
+        margin-bottom: 5px;
+        font-weight: bold;
+    }
+
+    /* Submit button */
+    .modal-content .submit-btn {
+        width: 100%;
+        padding: 10px;
+        background-color: #ed8936;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 16px;
+        text-align: center;
+        transition: background-color 0.3s ease;
+    }
+
+    .modal-content .submit-btn:hover {
+        background-color: #ff944d;
+    }
+
+    /* Make the form fields flex align */
+    .modal-content form {
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* Center the form items */
+    .modal-content .select-box1,
+    .modal-content .input-box {
+        width: 100%;
+    }
